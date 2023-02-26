@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Rampart+One&display=swap');
+
+:root {
+  --prim: rgb(255, 250, 163);
+  --sec: rgb(138, 214, 252);
+}
+
+body {
+  background-color: var(--prim);
+}
+
+h1 {
+  color: #51c8f4;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2.5px #fff, 0 0 7.5px var(--sec), 0 0 10px var(--sec),
+      0 0 12.5px var(--sec), 0 0 15px var(--sec), 0 0 17.5px var(--sec);
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 15px var(--sec),
+      0 0 20px var(--sec), 0 0 25px var(--sec), 0 0 30px var(--sec), 0 0 35px var(--sec);
+  }
+}
+
+
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.submit {
+  font-family: 'Rampart One', cursive;
+  color: #fff;
+  font-size: 18px;
+  background-color: rgb(82, 197, 255);
+  padding: 10px;
+  border-width: 2px;
+  border-color: #fff;
+  border-style: double;
+  border-radius: 5px;
+}
+
+.note {
+  font-family: 'Rampart One', cursive;
+  color: #51c8f4;
+  font-size: 40px;
+  text-align: center;
+}
