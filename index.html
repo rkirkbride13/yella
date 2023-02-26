@@ -15,6 +15,106 @@
       <p class="note" id="note">Push the button to yell!</p>
       <button class="submit" id="random">Yell something!</button>
     </div>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="module">
+      import confetti from "https://cdn.skypack.dev/canvas-confetti";
+      const messages = [
+        "You're amazing!",
+        "Believe in you!",
+        "Keep going!",
+        "You're not alone!",
+        "You got this!",
+        "Stay strong!",
+        "Be kind to yourself!",
+        "You matter!",
+        "Take a breath!",
+        "Be brave!",
+        "Smile often!",
+        "Stay positive!",
+        "Love yourself!",
+        "You rock!",
+        "Have faith!",
+        "You're loved!",
+        "Be courageous!",
+        "Stay hopeful!",
+        "You can do it!",
+        "Stay focused!",
+        "Keep trying!",
+        "Keep moving!",
+        "Stay inspired!",
+        "You're important!",
+        "Take your time!",
+        "You're worthy!",
+        "Stay motivated!",
+        "You're capable!",
+        "Stay encouraged!",
+        "Be resilient!",
+        "You're beautiful!",
+        "You're the best!",
+        "Stay confident!",
+        "Stay determined!",
+        "You're strong!",
+        "Stay grateful!",
+        "Stay optimistic!",
+        "You're unique!",
+        "Be yourself!",
+        "You're special!",
+        "Stay happy!",
+        "Stay joyful!",
+        "Stay peaceful!",
+        "Stay kindhearted!",
+        "Stay supportive!",
+        "Stay uplifted!",
+        "Stay thankful!",
+        "You are not alone!",
+        "You're doing great!",
+        "You got this!",
+        "Keep moving forward!",
+        "Stay positive!",
+        "Believe in yourself!",
+        "Stay strong!",
+        "Take it one day at a time!",
+        "You are loved!",
+        "Stay hopeful!",
+        "Keep pushing through!",
+        "You are capable!",
+        "Don't give up!",
+        "You're making progress!",
+        "You matter!",
+        "Stay focused!",
+        "You're not giving up!",
+        "Keep trying!",
+        "Stay motivated!",
+        "You're worth it!",
+        "Be kind to yourself!",
+        "You're beautiful inside and out!",
+        "Stay centered!",
+        "You are unique!",
+        "You're strong enough!",
+        "You're making a difference!",
+        "You inspire others!",
+        "You are appreciated!",
+        "Your hard work pays off!",
+        "You're an important part of the world!",
+        "You deserve happiness!",
+        "You're not alone in your struggles!",
+        "You can handle anything!",
+        "You're doing the best you can!",
+        "You're valuable and worthy!",
+        "You're full of potential!",
+        "You're not defined by your mistakes!",
+        "You're an amazing person!",
+        "You are capable of great things!",
+        "You are a strong and resilient individual!",
+      ];
+      const randomButton = document.getElementById("random");
+      const note = document.getElementById("note");
+      randomButton.addEventListener("click", () => {
+        note.textContent = "";
+        const randomIndex = Math.floor(Math.random() * messages.length);
+        const randomString = messages[randomIndex];
+        note.textContent = randomString;
+        confetti();
+      });
+    </script>
   </body>
 </html>
