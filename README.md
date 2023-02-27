@@ -5,3 +5,7 @@ A simple app to help brighten your day, stay motivated and positive! Made in a s
     $ git clone https://github.com/rkirkbride13/yella.git
     $ cd yella
     $ open index.html
+    
+## Screenshot
+
+![Homepage](./yella.png)
